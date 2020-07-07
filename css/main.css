@@ -1,0 +1,17 @@
+@media all {
+  body {
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 1281px) {
+  body {
+    background-color: #123456;
+  }
+}
+.header {
+  background-color: #123456;
+  width: 100%;
+  height: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */
