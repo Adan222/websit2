@@ -1,0 +1,13 @@
+$big_screen: 1281px;    //Resolution for monitor screen
+
+@media all{
+    body{
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: $big_screen){
+    body{
+        background-color: white;
+    }
+}
