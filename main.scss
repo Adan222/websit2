@@ -23,7 +23,7 @@
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    border: 1px solid red;
+    border: 1px solid #f34739;
     width: 80px;
     height: 36px;
 
@@ -46,30 +46,81 @@
 }
 
 .need_our_help{
+    @extend %flex_center;
+
     background-image: url("../img/top_designers.png");
     background-size: cover;
     background-repeat: no-repeat;
+
     width: 100%;
     height: 300px;
 
     color: white;
 
-    @extend %flex_center;
-}
+    line-height: 0.7;
 
-.need_help_text{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    p{
-        font-size: 1.2rem;
+    .need_help_text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        p{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+    
+        .line{
+            height: 1px;
+            width: 23vw;
+            background-color: white;
+        }
+        
     }
-}
 
-.line{
-    height: 1px;
-    width: 20vw;
-    background-color: white;
+    .top_design{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+    
+        h1{
+            margin: 0px;
+            font-size: 2.8rem;
+        }
+    }
+
+    .check_ous_buttn{
+        @extend %flex_center;
+
+        border: 1px solid white;
+        border-radius: 30px;
+
+        width: 110px;
+        height: 25px;
+
+        font-family: 'Dosis', sans-serif;
+        font-weight: 400;
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: white;
+
+        margin-top: 4vh;
+    }
+
+    .arrows{
+        @extend %flex_center;
+        margin-top: 50px;
+
+        .arrow{
+            width: 10px;
+            height: 10px;
+
+            border-bottom: 1px solid white;
+            border-left: 1px solid white;
+
+            margin-bottom: 5px;
+
+            transform: rotate(-45deg);
+        }
+    }
 }
