@@ -8,7 +8,7 @@
     background-color: white;
   }
 }
-.need_our_help .arrows, .need_our_help .check_ous_buttn, .need_our_help, .logo {
+.circles .circle_cont .circle .inside_text, .circles .circle_cont, .need_our_help .arrows, .need_our_help .check_ous_buttn, .need_our_help, .header .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,8 +22,7 @@
   flex-direction: row;
   align-items: center;
 }
-
-.logo {
+.header .logo {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -32,19 +31,16 @@
   height: 36px;
   margin-left: 0.4rem;
 }
-
-.menu-cont {
+.header .menu-cont {
   margin-left: 66%;
 }
-
-.menu {
+.header .menu {
   width: 1em;
   height: 1px;
   background-color: black;
   margin-top: 5px;
 }
-
-.menu:first-child {
+.header .menu:first-child {
   margin-top: 0px;
 }
 
@@ -80,6 +76,8 @@
 .need_our_help .top_design h1 {
   margin: 0px;
   font-size: 2.8rem;
+  text-align: center;
+  line-height: 0.9;
 }
 .need_our_help .check_ous_buttn {
   border: 1px solid white;
@@ -103,6 +101,48 @@
   border-left: 1px solid white;
   margin-bottom: 5px;
   transform: rotate(-45deg);
+}
+
+.circles {
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 30px;
+}
+.circles .circle_cont {
+  margin-bottom: 30px;
+}
+.circles .circle_cont .circle {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.circles .circle_cont .circle svg {
+  width: 210px;
+  height: 210px;
+}
+.circles .circle_cont .circle svg .progress-ring__circle {
+  stroke-width: 3;
+  fill: transparent;
+  transform: translate(45px, 45px);
+}
+.circles .circle_cont .circle .inside_text {
+  text-align: center;
+  width: 110px;
+  position: absolute;
+  bottom: 33%;
+  left: 23%;
+}
+.circles .circle_cont .circle .inside_text .inside_number {
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0px;
+}
+.circles .circle_cont .circle .inside_text .inside_desc {
+  margin: 0px;
+}
+.circles .circle_cont .circle_desc {
+  width: 180px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

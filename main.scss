@@ -15,34 +15,35 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-}
 
-.logo{
-    @extend %flex_center;   //center
-
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 1px solid #f34739;
-    width: 80px;
-    height: 36px;
-
-    margin-left: 0.4rem;
-}
-
-.menu-cont{
-    margin-left: 66%;
-}
-
-.menu{
-    width: 1em;
-    height: 1px;
-    background-color: black;
-    margin-top: 5px;
-}
-
-.menu:first-child{
-    margin-top: 0px;
+    .logo{
+        @extend %flex_center;   //center
+    
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border: 1px solid #f34739;
+        width: 80px;
+        height: 36px;
+    
+        margin-left: 0.4rem;
+    }
+    
+    .menu-cont{
+        margin-left: 66%;
+    }
+    
+    .menu{
+        width: 1em;
+        height: 1px;
+        background-color: black;
+        margin-top: 5px;
+    }
+    
+    .menu:first-child{
+        margin-top: 0px;
+    }
+    
 }
 
 .need_our_help{
@@ -86,6 +87,8 @@
         h1{
             margin: 0px;
             font-size: 2.8rem;
+            text-align: center;
+            line-height: 0.9;
         }
     }
 
@@ -121,6 +124,62 @@
             margin-bottom: 5px;
 
             transform: rotate(-45deg);
+        }
+    }
+}
+
+.circles{
+    width: 100%;
+
+    font-family: 'Quicksand', sans-serif;
+
+    margin-top: 30px;
+    
+    .circle_cont{
+        @extend %flex_center;
+
+        margin-bottom: 30px;
+
+        .circle{
+            width: auto;
+            height: auto;
+
+            position: relative;
+            svg {
+                width: 210px;
+                height: 210px;
+                .progress-ring__circle{
+                    stroke-width: 3;
+                    fill: transparent;
+
+                    transform: translate(45px, 45px);
+                }
+            }
+
+            .inside_text{
+                @extend %flex_center;
+                text-align: center;
+                width: 110px;
+
+                position: absolute;
+                bottom: 33%;
+                left: 23%;
+
+                .inside_number{
+                    font-size: 60px;
+                    font-weight: 900;
+                    margin: 0px;
+                }
+
+                .inside_desc{
+                    margin: 0px;
+                }
+            }
+        }
+
+        .circle_desc{
+            width: 180px;
+            text-align: center;
         }
     }
 }
