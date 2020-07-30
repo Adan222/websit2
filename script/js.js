@@ -1,6 +1,8 @@
-var circle = document.querySelectorAll(".progress-ring__circle");
-var radius = circle[0].r.baseVal.value;     //can be whatever
-var circumference = radius * 2 * Math.PI;
+let circle = document.querySelectorAll(".progress_ring__circle");
+const radius = circle[0].r.baseVal.value;
+let circumference = radius * 2 * Math.PI;
+
+console.log(circle);
 
 function setProgress(whith) {
     let percent = circle[whith].getAttribute("percent");

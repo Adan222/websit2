@@ -8,7 +8,7 @@
     background-color: white;
   }
 }
-.circles .circle_cont .circle .inside_text, .circles .circle_cont, .need_our_help .arrows, .need_our_help .check_ous_buttn, .need_our_help, .header .logo {
+.inside_border, .our_team, .circles .circle_cont .circle .inside_text, .circles .circle_cont, .need_our_help .arrows, .need_our_help .check_ous_buttn, .need_our_help, .header .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@
   height: 36px;
   margin-left: 0.4rem;
 }
-.header .menu-cont {
+.header .menu_cont {
   margin-left: 66%;
 }
 .header .menu {
@@ -66,7 +66,9 @@
 }
 .need_our_help .need_help_text .line {
   height: 1px;
-  width: 23vw;
+  width: 20vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
   background-color: white;
 }
 .need_our_help .top_design {
@@ -120,7 +122,7 @@
   width: 210px;
   height: 210px;
 }
-.circles .circle_cont .circle svg .progress-ring__circle {
+.circles .circle_cont .circle svg .progress_ring__circle {
   stroke-width: 3;
   fill: transparent;
   transform: translate(45px, 45px);
@@ -130,7 +132,7 @@
   width: 110px;
   position: absolute;
   bottom: 33%;
-  left: 23%;
+  left: 24%;
 }
 .circles .circle_cont .circle .inside_text .inside_number {
   font-size: 60px;
@@ -143,6 +145,45 @@
 .circles .circle_cont .circle_desc {
   width: 180px;
   text-align: center;
+}
+
+.our_team {
+  background-image: url(../img/our_teampng.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 25vh;
+  font-family: "Quicksand", sans-serif;
+}
+.our_team .up_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.our_team .up_text .line {
+  width: 10vw;
+  height: 1px;
+  background-color: white;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.our_team .up_text p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 0px;
+}
+.our_team .bottom_text h1 {
+  margin: 0px;
+}
+
+.inside_border {
+  width: 90vw;
+  height: 20vh;
+  border: 2px solid white;
+  color: white;
+  line-height: 1.1;
 }
 
 /*# sourceMappingURL=main.css.map */
