@@ -7,8 +7,12 @@
   body {
     background-color: white;
   }
+
+  .photos {
+    height: 25vh;
+  }
 }
-.inside_border, .people .taylor .first .border, .people .taylor, .people .thomas .first .border, .people .thomas, .people .olivia .first .border, .people .olivia, .people .adrianna .first .border, .people .adrianna, .our_team, .circles .circle_cont .circle .inside_text, .circles .circle_cont, .need_our_help .arrows, .need_our_help .check_ous_buttn, .need_our_help, .header .logo, body {
+.inside_border, .portfolio, .people .taylor .first .border, .people .taylor, .people .thomas .first .border, .people .thomas, .people .olivia .first .border, .people .olivia, .people .adrianna .first .border, .people .adrianna, .our_team, .circles .circle_cont .circle .inside_text, .circles .circle_cont, .need_our_help .arrows, .need_our_help .check_ous_buttn, .need_our_help, .header .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,7 +157,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 25vh;
+  height: 30vh;
   font-family: "Quicksand", sans-serif;
 }
 .our_team .up_text {
@@ -180,7 +184,6 @@
 
 .people {
   width: 100%;
-  height: 500px;
   font-family: "Quicksand", sans-serif;
 }
 .people .adrianna {
@@ -199,20 +202,6 @@
   border-bottom: none;
   width: 90%;
   height: 85%;
-}
-.people .adrianna .first .border p {
-  text-align: center;
-  margin: 0px;
-  line-height: 1.1;
-}
-.people .adrianna .first .border .header_text {
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-.people .adrianna .first .border .desc_text {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  font-weight: 300;
 }
 .people .adrianna .socond {
   width: 100%;
@@ -290,13 +279,6 @@
   display: flex;
   justify-content: center;
 }
-.people .olivia .socond .border .triangle {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid white;
-}
 .people .thomas {
   width: 100%;
   height: 480px;
@@ -313,20 +295,6 @@
   border-bottom: none;
   width: 90%;
   height: 85%;
-}
-.people .thomas .first .border p {
-  text-align: center;
-  margin: 0px;
-  line-height: 1.1;
-}
-.people .thomas .first .border .header_text {
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-.people .thomas .first .border .desc_text {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  font-weight: 300;
 }
 .people .thomas .socond {
   width: 100%;
@@ -347,13 +315,6 @@
   display: flex;
   justify-content: center;
 }
-.people .thomas .socond .border .triangle {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid white;
-}
 .people .taylor {
   width: 100%;
   height: 480px;
@@ -370,20 +331,6 @@
   border-bottom: none;
   width: 90%;
   height: 85%;
-}
-.people .taylor .first .border p {
-  text-align: center;
-  margin: 0px;
-  line-height: 1.1;
-}
-.people .taylor .first .border .header_text {
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-.people .taylor .first .border .desc_text {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  font-weight: 300;
 }
 .people .taylor .socond {
   width: 100%;
@@ -404,12 +351,78 @@
   display: flex;
   justify-content: center;
 }
-.people .taylor .socond .border .triangle {
+.people p {
+  text-align: center;
+  margin: 0px;
+  line-height: 1.1;
+}
+.people .header_text {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.people .desc_text {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.people .triangle {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid white;
+}
+.people .red_line {
+  width: 180px;
+  height: 3px;
+  background-color: #f34739;
+}
+
+.portfolio {
+  background-image: url("../img/portfolion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 30vh;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 25px;
+}
+.portfolio .up_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .up_text .line {
+  width: 10vw;
+  height: 1px;
+  background-color: white;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.portfolio .up_text p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 0px;
+}
+.portfolio .bottom_text h1 {
+  margin: 0px;
+}
+
+.photos {
+  width: 100%;
+}
+.photos .sec {
+  display: flex;
+  width: 100%;
+}
+.photos .sec .images {
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: opacity(0.6);
 }
 
 .inside_border {
@@ -418,12 +431,6 @@
   border: 2px solid white;
   color: white;
   line-height: 1.1;
-}
-
-.red_line {
-  width: 180px;
-  height: 3px;
-  background-color: #f34739;
 }
 
 /*# sourceMappingURL=main.css.map */

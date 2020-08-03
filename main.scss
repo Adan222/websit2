@@ -8,9 +8,11 @@
     align-items: center;
 }
 
-body{
-    @extend %flex_center;
-}
+//
+//
+// body selector in next file nigga
+// go check it 
+//
 
 .header{
     width: 100%;
@@ -199,7 +201,7 @@ body{
     @extend %flex_center;
 
     width: 100%;
-    height: 25vh;
+    height: 30vh;
 
     font-family: 'Quicksand', sans-serif;
 
@@ -233,7 +235,6 @@ body{
 
 .people{
     width: 100%;
-    height: 500px;
 
     font-family: 'Quicksand', sans-serif;
 
@@ -259,23 +260,6 @@ body{
                 height: 85%;
 
                 @extend %flex_center;
-
-                p{
-                    text-align: center;
-                    margin: 0px;
-                    line-height: 1.1;
-                }
-
-                .header_text{
-                    font-weight: 300;
-                    margin-bottom: 15px;
-                }
-
-                .desc_text{
-                    margin-top: 15px;
-                    font-size: 1.1rem;
-                    font-weight: 300;
-                }
             }
         }
 
@@ -379,15 +363,6 @@ body{
 
                 display: flex;
                 justify-content: center;
-
-                .triangle{
-                    width: 0; 
-                    height: 0; 
-                    border-left: 20px solid transparent;
-                    border-right: 20px solid transparent;
-                    
-                    border-top: 20px solid white;
-                }
             }
 
         }
@@ -415,23 +390,6 @@ body{
                 height: 85%;
 
                 @extend %flex_center;
-
-                p{
-                    text-align: center;
-                    margin: 0px;
-                    line-height: 1.1;
-                }
-
-                .header_text{
-                    font-weight: 300;
-                    margin-bottom: 15px;
-                }
-
-                .desc_text{
-                    margin-top: 15px;
-                    font-size: 1.1rem;
-                    font-weight: 300;
-                }
             }
         }
 
@@ -457,15 +415,6 @@ body{
 
                 display: flex;
                 justify-content: center;
-
-                .triangle{
-                    width: 0; 
-                    height: 0; 
-                    border-left: 20px solid transparent;
-                    border-right: 20px solid transparent;
-                    
-                    border-top: 20px solid white;
-                }
             }
 
         }
@@ -493,23 +442,6 @@ body{
                 height: 85%;
 
                 @extend %flex_center;
-
-                p{
-                    text-align: center;
-                    margin: 0px;
-                    line-height: 1.1;
-                }
-
-                .header_text{
-                    font-weight: 300;
-                    margin-bottom: 15px;
-                }
-
-                .desc_text{
-                    margin-top: 15px;
-                    font-size: 1.1rem;
-                    font-weight: 300;
-                }
             }
         }
 
@@ -535,21 +467,102 @@ body{
 
                 display: flex;
                 justify-content: center;
-
-                .triangle{
-                    width: 0; 
-                    height: 0; 
-                    border-left: 20px solid transparent;
-                    border-right: 20px solid transparent;
-                    
-                    border-top: 20px solid white;
-                }
             }
-
         }
     }
 
+    p{
+        text-align: center;
+        margin: 0px;
+        line-height: 1.1;
+    }
 
+    .header_text{
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    .desc_text{
+        margin-top: 15px;
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+
+    .triangle{
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        
+        border-top: 20px solid white;
+    }
+
+    .red_line{
+        width: 180px;
+        height: 3px;
+        background-color: #f34739;
+    }
+}
+
+.portfolio{
+    background-image: url("../img/portfolion.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @extend %flex_center;
+
+    width: 100%;
+    height: 30vh;
+
+    font-family: 'Quicksand', sans-serif;
+
+    margin-top: 25px;
+
+    .up_text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .line{
+            width: 10vw;
+            height: 1px;
+            background-color: white;
+            margin-left: 2vw;
+            margin-right: 2vw;
+        }
+
+        p{
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin: 0px;
+        }
+    }
+
+    .bottom_text{
+        h1{
+            margin: 0px;
+        }
+    }
+}
+
+.photos{
+    width: 100%;
+    .sec{
+        display: flex;
+        width: 100%;
+
+        .images{
+            height: 20vh;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            filter: opacity(0.6);
+        }
+    }
 }
 
 
@@ -567,9 +580,4 @@ body{
     line-height: 1.1;
 }
 
-.red_line{
-    width: 180px;
-    height: 3px;
-    background-color: #f34739;
-}
 
