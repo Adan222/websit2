@@ -12,7 +12,7 @@
     height: 25vh;
   }
 }
-.footer .inside_border, .logos, .gap, .people .taylor .first .border, .people .taylor, .people .thomas .first .border, .people .thomas, .people .olivia .first .border, .people .olivia, .people .adrianna .first .border, .people .adrianna, .circles .circle_cont .circle .inside_text, .circles .circle_cont, .need_our_help .arrows, .need_our_help .check_ous_buttn, .need_our_help, .header .logo {
+.inside_border, .footer, .big_footer .footer_sec, .big_footer, .logos, .gap, .people .taylor .first .border, .people .taylor, .people .thomas .first .border, .people .thomas, .people .olivia .first .border, .people .olivia, .people .adrianna .first .border, .people .adrianna, .circles .circle_cont .circle .inside_text, .circles .circle_cont, .need_our_help .arrows, .need_our_help .check_ous_buttn, .need_our_help, .header .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -419,7 +419,7 @@
 }
 .logos .pic_logo .logo {
   height: 20vh;
-  border: 1px solid purple;
+  border: 1px solid #f5f5f5;
   border-right: none;
   border-bottom: none;
   background-position: center;
@@ -431,13 +431,50 @@
 }
 .logos .space {
   height: 6vh;
-  border: 1px solid purple;
+  border: 1px solid #f5f5f5;
   border-bottom: none;
   border-top: none;
   border-right: none;
 }
 
-.footer .inside_border {
+.big_footer {
+  width: 100%;
+  background-color: #101010;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+.big_footer .footer_sec {
+  margin-bottom: 20px;
+}
+.big_footer .footer_sec h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+.big_footer .footer_sec .blue_line {
+  width: 140px;
+  height: 1px;
+  background-color: #028779;
+}
+.big_footer .footer_sec p {
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0px;
+  margin-top: 14px;
+  line-height: 1.4;
+  width: 200px;
+}
+
+.footer {
+  background-color: #0e0e0d;
+  width: 100%;
+  height: 8vh;
+  color: #3a3a3a;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8rem;
+}
+
+.inside_border {
   width: 90vw;
   height: 20vh;
   border: 2px solid white;

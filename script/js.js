@@ -88,7 +88,7 @@ function setLogos(){
             }   //for x
 
             if(i == 5){
-                child[j].style.borderTop = "1px solid purple";
+                child[j].style.borderTop = "1px solid #f5f5f5";
             }
         }   //for j
     }   //for i
