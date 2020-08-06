@@ -197,40 +197,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    @extend %flex_center;
-
-    width: 100%;
-    height: 30vh;
-
-    font-family: 'Quicksand', sans-serif;
-
-    .up_text{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-        .line{
-            width: 10vw;
-            height: 1px;
-            background-color: white;
-            margin-left: 2vw;
-            margin-right: 2vw;
-        }
-
-        p{
-            font-size: 1.3rem;
-            font-weight: 300;
-            margin: 0px;
-        }
-    }
-
-    .bottom_text{
-        h1{
-            margin: 0px;
-        }
-    }
 }
 
 .people{
@@ -509,7 +475,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
 
+.photos{
+    width: 100%;
+    .sec{
+        display: flex;
+        width: 100%;
+
+        .images{
+            height: 20vh;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            filter: opacity(0.6);
+        }
+    }
+}
+
+.brands{
+    background-image: url("../img/brands.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gap{
     @extend %flex_center;
 
     width: 100%;
@@ -517,7 +510,6 @@
 
     font-family: 'Quicksand', sans-serif;
 
-    margin-top: 25px;
 
     .up_text{
         display: flex;
@@ -542,30 +534,48 @@
 
     .bottom_text{
         h1{
+            font-size: 2.8rem;
             margin: 0px;
         }
     }
 }
 
-.photos{
+.logos{
+    @extend %flex_center;
     width: 100%;
-    .sec{
-        display: flex;
-        width: 100%;
 
-        .images{
+    .pic_logo{
+        display: flex;
+        .logo{
             height: 20vh;
 
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
+            border: 1px solid purple; //#f5f5f5
+            border-right: none;
+            border-bottom: none;
 
-            filter: opacity(0.6);
+            background-position: center;
+            background-repeat: no-repeat;
         }
+    }
+
+    .free{
+        display: flex;
+        justify-content: center;
+    }
+
+    .space{
+        height: 6vh;
+
+        border: 1px solid purple;
+        border-bottom: none;
+        border-top: none;
+        border-right: none;
     }
 }
 
+.footer
 
+//global
 
 //border in headers
 .inside_border{
